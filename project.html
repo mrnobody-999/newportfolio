@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+  <section class="projects">
+    <h2>🚀 My Projects</h2>
+    <div class="project-grid">
+      
+      <!-- Project Card -->
+      <div class="project-card" onclick="showProject('Hacker Terminal Simulator')">
+        <h3>Hacker Terminal</h3>
+        <p>Fake hacker dashboard with commands and animations.</p>
+      </div>
+      
+      <div class="project-card" onclick="showProject('AI Assistant')">
+        <h3>AI Assistant</h3>
+        <p>Simple chatbot that answers questions and tells jokes.</p>
+      </div>
+      
+      <div class="project-card" onclick="showProject('Portfolio Website')">
+        <h3>Portfolio Website</h3>
+        <p>Dark-mode responsive website with animations.</p>
+      </div>
+
+    </div>
+
+    <!-- Popup -->
+    <div id="projectPopup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h3 id="popupTitle"></h3>
+        <p id="popupDescription"></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="project.js"></script>
+</body>
+</html>
+<footer>
+    <p>&copy; 2024 Prajwal Tamang. All rights reserved.</p>
+  </footer>
